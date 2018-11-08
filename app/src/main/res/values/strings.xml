@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlipViewTest</string>
+    <string name="txt_empty">Empty Text</string>
+    <string name="txt_top">top</string>
+</resources>

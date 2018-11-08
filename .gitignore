@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea/*
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+Gemfile.lock
+app/fabric.properties
+fastlane/report.xml
+.project
+.settings/
+app/.classpath
+.bundle/
