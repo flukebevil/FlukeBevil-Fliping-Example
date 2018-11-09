@@ -54,12 +54,10 @@ class TinDerActivity : AppCompatActivity(), Tinder.SwipeListener {
     }
 
     override fun onSwipeIn(profile: Profile) {
-        Toast.makeText(this, "Accept", Toast.LENGTH_SHORT).show()
         acceptData.add(profile)
     }
 
     override fun onSwipeOut(profile: Profile) {
-        Toast.makeText(this, "Reject", Toast.LENGTH_SHORT).show()
     }
 
     private fun addItem() {
