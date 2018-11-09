@@ -1,8 +1,9 @@
-package com.example.sarawootpokkam.flipviewtest
+package com.example.sarawootpokkam.flipviewtest.flip
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.example.sarawootpokkam.flipviewtest.adapter.MyFlipAdapter
+import com.example.sarawootpokkam.flipviewtest.R
+import com.example.sarawootpokkam.flipviewtest.flip.adapter.MyFlipAdapter
 import com.example.sarawootpokkam.flipviewtest.model.Item
 import kotlinx.android.synthetic.main.activity_my_flip.*
 import se.emilsjolander.flipview.FlipView
@@ -33,6 +34,11 @@ class MainFlip : AppCompatActivity(), FlipView.OnFlipListener,
 
     override fun onPageChangeListener(position: Int?) =
         fvMain.smoothFlipTo(position ?: 0)
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
 
     private fun addData() {
         listData.add(

@@ -1,4 +1,4 @@
-package com.example.sarawootpokkam.flipviewtest.adapter
+package com.example.sarawootpokkam.flipviewtest.flip.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

@@ -2,4 +2,10 @@
     <string name="app_name">FlipViewTest</string>
     <string name="txt_empty">Empty Text</string>
     <string name="txt_top">top</string>
+    <string name="profile">profile</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="tinder">Tinder</string>
+    <string name="flip_board">FlipBoard</string>
+    <string name="view_approve">View Approve</string>
 </resources>

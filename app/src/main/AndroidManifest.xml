@@ -14,12 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
-        <activity android:name=".MainFlip" android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".flip.MainFlip" />
+        <activity android:name=".tinder.TinDerActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".flip.ShowApproveActivity"></activity>
     </application>
+
 </manifest>
