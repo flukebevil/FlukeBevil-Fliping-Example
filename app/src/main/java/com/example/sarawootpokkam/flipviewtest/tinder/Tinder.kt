@@ -2,7 +2,6 @@ package com.example.sarawootpokkam.flipviewtest.tinder
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
@@ -23,7 +22,7 @@ class Tinder(
     var context: Context,
     var profile: Profile,
     var swipeView: SwipePlaceHolderView,
-    var callback: SwipeListener
+    private var callback: SwipeListener
 ) {
 
     @View(R.id.profileImageView)
@@ -47,10 +46,12 @@ class Tinder(
     }
 
     @SwipeOut
-    private fun onSwipedOut() {}
+    private fun onSwipedOut() {
+    }
 
     @SwipeCancelState
-    private fun onSwipeCancelState() {}
+    private fun onSwipeCancelState() {
+    }
 
     @SwipeIn
     private fun onSwipeIn() {
@@ -58,10 +59,12 @@ class Tinder(
     }
 
     @SwipeInState
-    private fun onSwipeInState() {}
+    private fun onSwipeInState() {
+    }
 
     @SwipeOutState
-    private fun onSwipeOutState() {}
+    private fun onSwipeOutState() {
+    }
 
     interface SwipeListener {
         fun onSwipeIn(profile: Profile)

@@ -20,4 +20,11 @@
         android:layout_marginTop="@dimen/dimen16dp"
         android:text="@string/flip_board" />
 
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:id="@+id/btnHorizontalFlip"
+        android:layout_marginTop="@dimen/dimen16dp"
+        android:text="@string/horizontal_flip"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

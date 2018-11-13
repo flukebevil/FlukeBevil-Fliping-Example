@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.item_flip_page.view.*
 class MyFlipAdapter : BaseAdapter() {
 
     private var item: MutableList<Item> = arrayListOf()
+    var isOldLibrary: Boolean = false
     lateinit var pageRequestChange: OnRequestChangePageListener
 
     @SuppressLint("ViewHolder")
@@ -58,7 +59,9 @@ class MyFlipAdapter : BaseAdapter() {
         private fun setUpToolbar(text: String?) {
             view?.toolbar?.apply {
                 title = text
-                setNavigationOnClickListener { pageRequestChange.onPageChangeListener(0) }
+                isOldLibrary.takeIf { !it }?.apply {
+                    setNavigationOnClickListener { pageRequestChange.onPageChangeListener(0) }
+                } ?: kotlin.run { navigationIcon = null }
             }
         }
     }

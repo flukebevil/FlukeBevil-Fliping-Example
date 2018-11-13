@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
         <activity android:name=".flip.MainFlip" />
         <activity android:name=".tinder.TinDerActivity" />
         <activity
@@ -25,7 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".flip.ShowApproveActivity"></activity>
+        <activity android:name=".flip.ShowApproveActivity" />
+        <activity android:name=".flip.horizontal.MainFlipHorizontal" />
     </application>
 
 </manifest>

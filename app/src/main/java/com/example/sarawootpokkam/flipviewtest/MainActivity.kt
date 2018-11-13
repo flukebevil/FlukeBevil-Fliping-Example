@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.example.sarawootpokkam.flipviewtest.flip.MainFlip
+import com.example.sarawootpokkam.flipviewtest.flip.horizontal.MainFlipHorizontal
 import com.example.sarawootpokkam.flipviewtest.tinder.TinDerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         }
         btnTinder.setOnClickListener {
             startActivity(Intent(this, TinDerActivity::class.java))
+        }
+        btnHorizontalFlip.setOnClickListener {
+            startActivity(Intent(this, MainFlipHorizontal::class.java))
         }
     }
 }
