@@ -24,7 +24,10 @@ class MainFlip : AppCompatActivity(), FlipView.OnFlipListener,
         fvMain.apply {
             adapter = this@MainFlip.flipAdapter
             setOnFlipListener(this@MainFlip)
-            peakNext(false)
+            /**
+             * Open this when you need sample flip on start its will show that page has flip able
+             */
+//            peakNext(false)
             overFlipMode = OverFlipMode.GLOW
         }
     }
